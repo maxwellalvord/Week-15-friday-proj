@@ -1,0 +1,32 @@
+Write an algorithm that determines whether all the elements in a string are unique. You may not convert the string into an array or use array methods to solve this problem. The algorithm should return a boolean.
+
+///javascript
+///acccount for edge cases
+
+
+//loop / address each char one at a time
+//loop2 / related the forst loop char to every cahr in the input
+
+
+
+function checkUnique(parameter) //man
+{
+	//let stringParameter = parameter.toString();
+	if(typeOf(parameter) !== string)
+		return console.log("ERROR typeof parameter is not string, please input string");
+	
+	for (let i = 0; i < parameter.length; i++) //i=0,1 //m, a
+		for( let k = i + 1; k < parameter.length; k++) //k=1,2 //a, n
+			if (parameter[i] == parameter[k])
+				return console.log("false")
+	return console.log("true");
+}
+
+
+
+
+	
+	
+//outcome boolean: true/false	
+
+//inputs string: checkUnique() // input parameter	
